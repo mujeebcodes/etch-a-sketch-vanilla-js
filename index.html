@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="pencil-solid.svg" type="image/x-icon" />
+    <title>EazySketch</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><img src="pencil-solid.svg" alt="pencil" />EazySketch</h1>
+      <p>
+        To start drawing, click anywhere on the canvas to activate draw mode,
+        click again to disable it. <br />
+        <span>Drawing Mode: </span>
+      </p>
+    </header>
+    <div class="main-container">
+      <div class="sketch-container">
+        <div class="sketchpad"></div>
+      </div>
+      <div class="control-area">
+        <div class="size-container">
+          <input
+            type="range"
+            id="grid-size"
+            class="grid-size"
+            min="2"
+            max="100"
+          />
+          <label for="grid-size">Grid size: <span>1</span></label>
+        </div>
+        <div class="color-container">
+          <input type="color" id="color-input" class="color-input" />
+          <label for="color-input">Choose pen color</label>
+        </div>
+        <button class="erase">Erase</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>
