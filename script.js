@@ -56,7 +56,7 @@ gridSize.addEventListener("change", () => {
 // erase functionality
 const eraseButton = document.querySelector(".erase");
 eraseButton.addEventListener("click", () => {
-  colorInput.value = "#808080";
+  colorInput.value = "#fff";
 });
 
 // reset functionality
